@@ -1,6 +1,5 @@
 <h1><%= pluralize( @recipes.size, 'Receita', plural: 'Receitas') %></h1>
 
-<ul>
   <% @recipes.each do |recipe| %>
     <article>
       <header>	
@@ -24,4 +23,6 @@
       </table>
     </article>
   <% end %>
-</ul>
+</br>
+
+<%= link_to 'Nova Receita', new_recipe_path %>
