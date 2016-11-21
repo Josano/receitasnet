@@ -3,4 +3,9 @@ class Recipe < ApplicationRecord
   def ligth?
   	calories <= 100
   end
+
+  def self.created_at
+    where('created_at <= ?', Time.zone.now).order('created_at desc')	
+  end
+  
 end
