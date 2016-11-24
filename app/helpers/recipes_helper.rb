@@ -10,7 +10,7 @@ module RecipesHelper
 
   def imagem(recipe)
     if recipe.poster.blank?
-  	  image_tag('sem-imagem.gif')
+  	  image_tag('sem-imagem.gif',size: '150', alt: 'sem-imagem')
     else   
       image_tag(recipe.poster) 
     end  
