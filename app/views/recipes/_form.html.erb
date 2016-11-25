@@ -9,7 +9,7 @@
 </p>
 <p class="form-group">
   <%= f.label :Tipo %></br>
-  <%= f.text_field :kind , class:"form-control" %>
+  <%= f.select :kind , Recipe::KIND , {} , class: "form-control" %>
 </p>
 <p class="form-group">
   <%= f.label :Calorias %></br>
