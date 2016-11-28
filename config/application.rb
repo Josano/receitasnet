@@ -11,5 +11,12 @@ module Receitasnet
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    #Configuration Timezone
+    config.time_zone = "Brasilia"
+
+    # Configuration i18n
+    config.i18n.default_locale = "pt-BR"
+    I18n.config.available_locales = "pt-BR"
   end
 end
