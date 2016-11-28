@@ -1,4 +1,5 @@
 <%= form_for(@recipe) do |f| %>
+<%= render 'layouts/errors' %>
 <p class="form-group">
   <%= f.label :Nome %></br>
   <%= f.text_field :name , class:"form-control" %>
