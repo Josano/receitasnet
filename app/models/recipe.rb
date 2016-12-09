@@ -9,6 +9,8 @@ class Recipe < ApplicationRecord
   KIND = %w(Carnes Aves Peixes Massas Saladas Doces)
   validates_inclusion_of :kind, in: KIND
 
+  has_many :comments, dependent: :destroy
+
   #todo metodo terminado com interrogação retorna um booleano true ou false	
   def ligth?
   	calories <= 100
